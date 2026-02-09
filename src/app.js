@@ -6,6 +6,9 @@ import searchRouter from "./routes/search.routes.js";
 
 const app = express();
 
+app.get("/",(req,res)=>{
+  res.send("Api Is Live 🖕")
+})
 app.use("/api/hindi/recent",router);
 app.use("/api/hindi/episode",episoderouter)
 app.use("/api/hindi/stream/",iframeRouter)
